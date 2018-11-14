@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [用户管理系统测试套件]">
+  <listeners>
+    <listener class-name="com.tester.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="用户管理系统测试用例(failed)">
+    <classes>
+      <class name="com.tester.cases.UpdateUserInfoTest">
+        <methods>
+          <include name="deleteUser"/>
+          <include name="updateUserInfo"/>
+        </methods>
+      </class> <!-- com.tester.cases.UpdateUserInfoTest -->
+      <class name="com.tester.cases.GetUserInfoListTest">
+        <methods>
+          <include name="getUserListInfo"/>
+        </methods>
+      </class> <!-- com.tester.cases.GetUserInfoListTest -->
+      <class name="com.tester.cases.LoginTest">
+        <methods>
+          <include name="loginTrue"/>
+          <include name="beforeTest"/>
+          <include name="loginFalse"/>
+        </methods>
+      </class> <!-- com.tester.cases.LoginTest -->
+      <class name="com.tester.cases.GetUserInfoTest">
+        <methods>
+          <include name="getUserInfo"/>
+        </methods>
+      </class> <!-- com.tester.cases.GetUserInfoTest -->
+      <class name="com.tester.cases.AddUserTest">
+        <methods>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- com.tester.cases.AddUserTest -->
+    </classes>
+  </test> <!-- 用户管理系统测试用例(failed) -->
+</suite> <!-- Failed suite [用户管理系统测试套件] -->

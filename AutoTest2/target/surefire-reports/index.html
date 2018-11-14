@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-用户管理系统测试套件">
+              <span class="suite-name border-failed">用户管理系统测试套件</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-用户管理系统测试套件">
+                    <span>C:\Users\xxx\Desktop\AutoTest2\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-用户管理系统测试套件">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-用户管理系统测试套件">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-用户管理系统测试套件">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-用户管理系统测试套件">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-用户管理系统测试套件">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-用户管理系统测试套件">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 2 failed,  5 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-用户管理系统测试套件" class="hide-methods failed suite-用户管理系统测试套件"> (hide)</a> <!-- hide-methods failed suite-用户管理系统测试套件 -->
+                      <a href="#" panel-name="suite-用户管理系统测试套件" class="show-methods failed suite-用户管理系统测试套件"> (show)</a> <!-- show-methods failed suite-用户管理系统测试套件 -->
+                    </span>
+                    <div class="method-list-content failed suite-用户管理系统测试套件">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.LoginTest" hash-for-method="loginFalse">loginFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.LoginTest" hash-for-method="loginTrue">loginTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-用户管理系统测试套件 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-用户管理系统测试套件" class="hide-methods skipped suite-用户管理系统测试套件"> (hide)</a> <!-- hide-methods skipped suite-用户管理系统测试套件 -->
+                      <a href="#" panel-name="suite-用户管理系统测试套件" class="show-methods skipped suite-用户管理系统测试套件"> (show)</a> <!-- show-methods skipped suite-用户管理系统测试套件 -->
+                    </span>
+                    <div class="method-list-content skipped suite-用户管理系统测试套件">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.AddUserTest" hash-for-method="addUser">addUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.UpdateUserInfoTest" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.GetUserInfoTest" hash-for-method="getUserInfo">getUserInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.GetUserInfoListTest" hash-for-method="getUserListInfo">getUserListInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.tester.cases.UpdateUserInfoTest" hash-for-method="updateUserInfo">updateUserInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-用户管理系统测试套件 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-用户管理系统测试套件" class="panel 用户管理系统测试套件">
+          <div class="suite-用户管理系统测试套件-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tester.cases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFalse">
+                  </a> <!-- loginFalse -->
+                  <span class="method-name">loginFalse</span>
+                  <div class="stack-trace">org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8888 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:573)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:425)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:732)
+	at com.tester.cases.LoginTest.getResult(LoginTest.java:86)
+	at com.tester.cases.LoginTest.loginFalse(LoginTest.java:63)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 37 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(用户登陆失败接口)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTrue">
+                  </a> <!-- loginTrue -->
+                  <span class="method-name">loginTrue</span>
+                  <div class="stack-trace">org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8888 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:573)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:425)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:732)
+	at com.tester.cases.LoginTest.getResult(LoginTest.java:86)
+	at com.tester.cases.LoginTest.loginTrue(LoginTest.java:46)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:148)
+	... 37 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(用户成功登陆接口)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-failed -->
+          <div class="suite-用户管理系统测试套件-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.tester.cases.UpdateUserInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
+                  <div class="stack-trace">java.lang.Throwable: Method UpdateUserInfoTest.deleteUser()[pri:0, instance:com.tester.cases.UpdateUserInfoTest@7dc36524] depends on not successfully finished methods in group &quot;loginTrue&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(删除用户)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserInfo">
+                  </a> <!-- updateUserInfo -->
+                  <span class="method-name">updateUserInfo</span>
+                  <div class="stack-trace">java.lang.Throwable: Method UpdateUserInfoTest.updateUserInfo()[pri:0, instance:com.tester.cases.UpdateUserInfoTest@7dc36524] depends on not successfully finished methods in group &quot;loginTrue&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(更改用户信息)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-skipped -->
+          <div class="suite-用户管理系统测试套件-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.tester.cases.GetUserInfoListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserListInfo">
+                  </a> <!-- getUserListInfo -->
+                  <span class="method-name">getUserListInfo</span>
+                  <div class="stack-trace">java.lang.Throwable: Method GetUserInfoListTest.getUserListInfo()[pri:0, instance:com.tester.cases.GetUserInfoListTest@35bbe5e8] depends on not successfully finished methods in group &quot;loginTrue&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(获取性别为男的用户信息)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-skipped -->
+          <div class="suite-用户管理系统测试套件-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.tester.cases.GetUserInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserInfo">
+                  </a> <!-- getUserInfo -->
+                  <span class="method-name">getUserInfo</span>
+                  <div class="stack-trace">java.lang.Throwable: Method GetUserInfoTest.getUserInfo()[pri:0, instance:com.tester.cases.GetUserInfoTest@7d417077] depends on not successfully finished methods in group &quot;loginTrue&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(获取userId为1的用户信息)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-skipped -->
+          <div class="suite-用户管理系统测试套件-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.tester.cases.AddUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser">
+                  </a> <!-- addUser -->
+                  <span class="method-name">addUser</span>
+                  <div class="stack-trace">java.lang.Throwable: Method AddUserTest.addUser()[pri:0, instance:com.tester.cases.AddUserTest@3f0ee7cb] depends on not successfully finished methods in group &quot;loginTrue&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(添加用户接口接口)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-skipped -->
+        </div> <!-- panel 用户管理系统测试套件 -->
+        <div panel-name="test-xml-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\xxx\Desktop\AutoTest2\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;用户管理系统测试套件&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.tester.config.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;用户管理系统测试用例&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tester.cases.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTrue&quot;/&gt;
+          &lt;include name=&quot;loginFalse&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tester.cases.LoginTest --&gt;
+      &lt;class name=&quot;com.tester.cases.AddUserTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tester.cases.AddUserTest --&gt;
+      &lt;class name=&quot;com.tester.cases.GetUserInfoTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getUserInfo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tester.cases.GetUserInfoTest --&gt;
+      &lt;class name=&quot;com.tester.cases.UpdateUserInfoTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;updateUserInfo&quot;/&gt;
+          &lt;include name=&quot;deleteUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tester.cases.UpdateUserInfoTest --&gt;
+      &lt;class name=&quot;com.tester.cases.GetUserInfoListTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getUserListInfo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tester.cases.GetUserInfoListTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 用户管理系统测试用例 --&gt;
+&lt;/suite&gt; &lt;!-- 用户管理系统测试套件 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">用户管理系统测试用例 (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">loginTrue</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTrue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_用户管理系统测试套件');
+function tableData_用户管理系统测试套件() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTrue')
+data.setCell(0, 2, 'com.tester.cases.LoginTest')
+data.setCell(0, 3, 3996);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginFalse')
+data.setCell(1, 2, 'com.tester.cases.LoginTest')
+data.setCell(1, 3, 2284);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteUser')
+data.setCell(2, 2, 'com.tester.cases.UpdateUserInfoTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getUserListInfo')
+data.setCell(3, 2, 'com.tester.cases.GetUserInfoListTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addUser')
+data.setCell(4, 2, 'com.tester.cases.AddUserTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getUserInfo')
+data.setCell(5, 2, 'com.tester.cases.GetUserInfoTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'updateUserInfo')
+data.setCell(6, 2, 'com.tester.cases.UpdateUserInfoTest')
+data.setCell(6, 3, 0);
+window.suiteTableData['用户管理系统测试套件']= { tableData: data, tableDiv: 'times-div-用户管理系统测试套件'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-用户管理系统测试套件">
+              </div> <!-- times-div-用户管理系统测试套件 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tester.cases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTrue</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginFalse</span>
+                <span class="method-start">4129 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
